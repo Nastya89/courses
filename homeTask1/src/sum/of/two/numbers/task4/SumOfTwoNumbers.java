@@ -7,15 +7,14 @@ import java.util.Scanner;
  */
 public class SumOfTwoNumbers {
     public static void main(String[] args) {
-        Scanner sc1 = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         int a, b;
         System.out.print("Введите первое целое число: ");
-        Scanner sc2 = new Scanner(System.in);
-        if (sc1.hasNextInt()) {
-            a = sc1.nextInt();
+        if (sc.hasNextInt()) {
+            a = sc.nextInt();
             System.out.print("Введите второе целое число: ");
-            if (sc2.hasNextInt()) {
-                b = sc2.nextInt();
+            if (sc.hasNextInt()) {
+                b = sc.nextInt();
                 System.out.print("Сумма двух чисел равна " + (a + b));
             } else {
                 System.out.println("Вы ввели не целое число");
