@@ -1,4 +1,4 @@
-package TypeConvertingTask1;
+package type.converting.task1;
 
 /**
  * Created by Anastasiya on 28-Jun-17.
