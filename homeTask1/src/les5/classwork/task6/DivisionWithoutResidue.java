@@ -5,11 +5,9 @@ package les5.classwork.task6;
  */
 public class DivisionWithoutResidue {
     public static void main(String[] args) {
-
-        for (int a = 0; a < 100; a += 5) {
-            do {
-                System.out.println(a += 5);
-            } while (a < 100);
-        }
+        int a = 0;
+        do {
+            System.out.println(a += 5);
+        } while (a < 100);
     }
 }
