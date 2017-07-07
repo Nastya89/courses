@@ -26,8 +26,6 @@ public class WeekDaysSwitch {
                     day = "Пятница";
                     break;
                 case 6:
-                    day = "Выходной";
-                    break;
                 case 7:
                     day = "Выходной";
                     break;
