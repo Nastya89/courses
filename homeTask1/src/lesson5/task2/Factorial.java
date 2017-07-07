@@ -7,12 +7,10 @@ import java.util.Scanner;
  */
 public class Factorial {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int f;
+        int a = 1, b = 10;
+        int n = a + (int) (Math.random() * b);
         int result = 1;
-        System.out.print("Введите число: ");
-        f = sc.nextInt();
-        for (int i = 1; i <= f; i++)
+        for (int i = 1; i <= n; i++)
             result *= i;
         System.out.println("Result: " + result);
     }
