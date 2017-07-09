@@ -1,6 +1,5 @@
 package lesson5.task2;
 
-import java.util.Scanner;
 
 /**
  * Created by Anastasiya on 03-Jul-17.
