@@ -8,29 +8,29 @@ import java.util.Scanner;
 public class SmallestNumberInAbsoluteValue {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double a, b, c, d;
+        double a = 0, b = 0, c = 0, d;
         System.out.print("Введите первое число: ");
         if (checkDouble(sc)) {
             a = getDouble(sc);
             System.out.print("Введите второе число: ");
-            if (checkDouble(sc)) {
-                b = getDouble(sc);
-                System.out.print("Введите третье число: ");
-                if (checkDouble(sc)) {
-                    c = getDouble(sc);
-                    d = Math.abs(a) < Math.abs(b)
-                            ? (Math.abs(a) < Math.abs(c) ? Math.abs(a) : Math.abs(c))
-                            : (Math.abs(b) < Math.abs(c) ? Math.abs(b) : Math.abs(c));
-                    System.out.print("Меньшее число по модулю равно " + d);
-                }
-            }
         }
+        if (checkDouble(sc)) {
+            b = getDouble(sc);
+            System.out.print("Введите третье число: ");
+        }
+        if (checkDouble(sc)) {
+            c = getDouble(sc);
+        }
+        d = Math.abs(a) < Math.abs(b)
+                ? (Math.abs(a) < Math.abs(c) ? Math.abs(a) : Math.abs(c))
+                : (Math.abs(b) < Math.abs(c) ? Math.abs(b) : Math.abs(c));
+        System.out.print("Меньшее число по модулю равно " + d);
     }
 
     public static Boolean checkDouble(Scanner sc) {
         if (!sc.hasNextDouble()) {
             System.out.println("Вы ввели не число");
-            return false;
+            System.exit(0);
         }
         return true;
     }
